@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище УчётЗаказовModelContainer" CdmEntityContainer="УчётЗаказовEntities">
+    <EntitySetMapping Name="Заказы">
+      <EntityTypeMapping TypeName="УчётЗаказовModel.Заказы">
+        <MappingFragment StoreEntitySet="Заказы">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Заказ" ColumnName="Заказ" />
+          <ScalarProperty Name="Адресс" ColumnName="Адресс" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ПостоянныеПокупатели">
+      <EntityTypeMapping TypeName="УчётЗаказовModel.ПостоянныеПокупатели">
+        <MappingFragment StoreEntitySet="ПостоянныеПокупатели">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Скидка__" ColumnName="Скидка %" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Учётные_данные">
+      <EntityTypeMapping TypeName="УчётЗаказовModel.Учётные_данные">
+        <MappingFragment StoreEntitySet="Учётные данные">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
